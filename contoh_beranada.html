@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Transaksi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      overflow: hidden;
+    }
+    nav ul li {
+      float: left;
+    }
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      background-color: #575757;
+    }
+    main {
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select, button {
+      padding: 10px;
+      width: 100%;
+      margin-top: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Halaman Transaksi</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="transaksi.html">Transaksi</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Form Transaksi</h2>
+    <form>
+      <div class="form-group">
+        <label for="namaTransaksi">Nama Transaksi:</label>
+        <input type="text" id="namaTransaksi" name="namaTransaksi" placeholder="Masukkan nama transaksi">
+      </div>
+      <div class="form-group">
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" placeholder="Masukkan jumlah">
+      </div>
+      <div class="form-group">
+        <label for="kategori">Kategori:</label>
+        <select id="kategori" name="kategori">
+          <option value="peminjaman">Peminjaman</option>
+          <option value="pengembalian">Pengembalian</option>
+          <option value="lainnya">Lainnya</option>
+        </select>
+      </div>
+      <button type="submit">Simpan Transaksi</button>
+    </form>
+
+    <h2>Daftar Transaksi</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama Transaksi</th>
+          <th>Jumlah</th>
+          <th>Kategori</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Contoh Transaksi 1</td>
+          <td>5</td>
+          <td>Peminjaman</td>
+        </tr>
+        <tr>
+          <td>Contoh Transaksi 2</td>
+          <td>3</td>
+          <td>Pengembalian</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aplikasi Perpustakaan</p>
+  </footer>
+</body>
+</html>

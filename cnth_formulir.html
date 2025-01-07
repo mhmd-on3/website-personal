@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir dengan Validasi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        
+        <fieldset> 
+        <table border="0">
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <legend><h2>formulir pendaftaran</h2></legend>
+            
+            <tr>
+                <td><label for="username">Nama Pengguna</label></td>
+                <td>:</td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>:</td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+                  
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td>:</td>
+                <td> <input type="password" id="password" name="password" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="confirmPassword">Konfirmasi Password</label></td>
+                <td>:</td>
+                <td><input type="password" id="confirmPassword" name="confirmPassword" required></td>
+            </tr>            
+            
+            
+            <tr>
+                <td><input type="submit" value="Daftar"></td>
+            </tr>
+            
+            
+            </form>
+        </table>
+        </fieldset>
+        <p id="error-message" style="color: red;"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
